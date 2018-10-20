@@ -9,7 +9,7 @@ int sieve(int target) {
 		tablesize = 100;
 	}
 	else {
-		tablesize = target * (int) (log(target) * 1.5);		
+		tablesize = target * (int) (log((double) target) * 1.5);		
 	}
 	int* table = malloc(tablesize * sizeof(int));
 	for(int i = 0; i < tablesize; i++) {
